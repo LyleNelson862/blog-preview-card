@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Blog preview card</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+
+    body{
+      background-color: hsl(47, 88%, 63%);
+    }
+    #card{
+      background-color: hsl(0, 0%, 100%);
+      margin: auto;
+      margin-top: 25vh;
+      width: 375px;
+      height: 500px;
+      border-radius: 25px;
+      box-shadow: 10px 10px black;
+    }
+    img{
+      position: relative;
+      width: 325px;
+      height: 200px;
+      left: 25px;
+      top: 25px;
+      right: 25px;
+      border-radius: 15px;
+    }
+    #yellowBox{
+      margin-top: 40px;
+      margin-left: 25px;
+      padding-top: 7px;
+      padding-bottom: 7px;
+      width: 90px;
+      background-color: hsl(47, 88%, 63%);
+      text-align: center;
+      border-radius: 5px;
+    }
+    #learning{
+      font-family: Arial, Helvetica, sans-serif;
+      /*The Figtree font mentioned in the style guide didn't work for me, but this font at least gets rid of serifs,
+      thus looking similar to the Figtree font.*/
+      font-weight: bold;
+    }
+    #PublishDate{
+      margin-top: 15px;
+      margin-left: 25px;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    h2{
+      margin-left: 25px;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    h4{
+      margin-bottom: -5px; /* The margin-bottom property is applied here because CSS has bigger margins below header elements by default,
+      primarily due to browser default stylesheets. Explicitly setting the margin-bottom property overrides these default browser styles. */
+      margin-left: 25px;
+      margin-right: 25px;
+      font-size: 16px;
+      font-family: Arial, Helvetica, sans-serif;
+      color: grey;
+      font-weight: normal;
+      /* border: 2px solid black; */
+    }
+    #GregsFace{
+      position: relative;
+      height: 30px;
+      width: 30px;
+      font-family: Arial, Helvetica, sans-serif;
+      /* border: 2px solid black; */
+    }
+    #NameTag{
+      margin-left: 70px;
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: bold;
+      /* border: 2px solid black; */
+    }
+    .attribution { 
+      font-size: 15px; 
+      text-align: center;
+      margin-top: 15px; 
+     }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <div id = "card">
+    <img src="assets/images/illustration-article.svg" alt="">
+    <div id = yellowBox>
+      <div id = "learning"> Learning </div>
+    </div>
+
+    <div id = PublishDate >Published 21 Dec 2023</div>
+
+    <h2> HTML & CSS foundations </h2>
+
+    <h4> These languages are the backbone of every website, defining structure, content, and presentation. </h2>
+
+    <img src="assets/images/image-avatar.webp" id = GregsFace>
+    <div id = "NameTag"> Greg Hooper</div>
+  </div>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#https://www.frontendmentor.io/profile/LyleNelson862/comments">01LyleNelson</a>.
+  </div>
+</body>
+</html>
